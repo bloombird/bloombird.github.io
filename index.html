@@ -8,28 +8,9 @@
    <link rel="stylesheet" href="css/normalize.css">
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <title>truevalue</title>
-   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-   <script src="js/jquery-1.12.4.js"></script>
-   <script src="js/jquery-ui.js"></script>
-   <script>
-   $( function() {
-    $( "#dialog" ).dialog({
-       autoOpen: false,
-       show: {
-        effect: "blind",
-        duration: 1000
-       },
-       hide: {
-        effect: "explode",
-        duration: 1000
-       }
-    });
 
-    $( "#opener" ).on( "click", function() {
-       $( "#dialog" ).dialog( "open" );
-    });
-   } );
-   </script>
+
+
 </head>
 <body>
    <div id="nav">
@@ -88,7 +69,7 @@
             <span class="greyinfo">420 Commonwealth Ave Apt 460</span></div>
          <img src="img/5.jpg" alt="">
       </div>
-      <button class="box box6" id="opener">
+      <button class="box box6" id="myBtn">
          <div class="info">
             <span class="up">condo for sale</span><br>
             <span class="bignumber">$659,000</span>
@@ -97,15 +78,52 @@
          <img src="img/kenbox4.png" alt="">
       </button>
 
-      <div id="dialog" title="Basic dialog">
-  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
+
 
 
 
    </div>
    <map class="map">
+      <div><img class="sta" src="img/satellite.png" alt=""></div>
       <img src="img/map.png" alt="">
+      <div class="add">+</div>
+      <div class="minus">-</div>
    </map>
+
+   <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+   </div>
+
+   <script>
+         // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+   </script>
+
 </body>
 </html>
