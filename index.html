@@ -4,10 +4,108 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <title>truevalue</title>
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script>
+   $( function() {
+    $( "#dialog" ).dialog({
+       autoOpen: false,
+       show: {
+        effect: "blind",
+        duration: 1000
+       },
+       hide: {
+        effect: "explode",
+        duration: 1000
+       }
+    });
+
+    $( "#opener" ).on( "click", function() {
+       $( "#dialog" ).dialog( "open" );
+    });
+   } );
+   </script>
 </head>
 <body>
- hello,world!!!
- IP1,IP2
+   <div id="nav">
+      <div class="logo">
+         <img src="img/logo.png" alt="">
+      </div>
+      <div class="navigation">
+         <ul>
+            <li>Buy</li>
+            <li>Rent</li>
+            <li>Sell</li>
+            <li>Mortages</li>
+            <li>Agent finder</li>
+            <li>More</li>
+         </ul>
+      </div>
+   </div>
+   <div class="information">
+      <div class="box box1">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$459,000</span>
+            1bd &bull; 1ba &bull; 510 sqft<br>
+            <span class="greyinfo">566 Commonwealth Ave Apt 604</span></div>
+         <img src="img/1.jpg" alt="">
+      </div>
+      <div class="box box2">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$949,000</span>
+            2bd &bull; 2ba &bull; 510 sqft<br>
+            <span class="greyinfo">37 Bay State Rd Apt 4 Boston, MA 02215</span></div>
+         <img src="img/2.jpg" alt="">
+      </div>
+      <div class="box box3">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$479,000</span>
+            1bd &bull; 1ba &bull; 510 sqft<br>
+            <span class="greyinfo">506 Commonwealth Ave Apt 604</span></div>
+         <img src="img/3.jpg" alt="">
+      </div>
+      <div class="box box4">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$609,000</span>
+            3bd &bull; 2ba &bull; 510 sqft<br>
+            <span class="greyinfo">360 Commonwealth Ave Apt 202</span></div>
+         <img src="img/4.jpg" alt="">
+      </div>
+      <div class="box box5">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$559,000</span>
+            3bd &bull; 2ba &bull; 510 sqft<br>
+            <span class="greyinfo">420 Commonwealth Ave Apt 460</span></div>
+         <img src="img/5.jpg" alt="">
+      </div>
+      <button class="box box6" id="opener">
+         <div class="info">
+            <span class="up">condo for sale</span><br>
+            <span class="bignumber">$659,000</span>
+            3bd &bull; 5ba &bull; 600 sqft<br>
+            <span class="greyinfo">50 Commonwealth Ave Apt 760</span></div>
+         <img src="img/5.jpg" alt="">
+      </button>
+
+      <div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+
+
+
+   </div>
+   <map class="map">
+      <img src="img/map.png" alt="">
+   </map>
 </body>
 </html>

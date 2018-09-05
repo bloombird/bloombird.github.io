@@ -1,0 +1,108 @@
+
+*{
+   padding: 0px;
+   margin: 0px;
+}
+button{
+   text-align: left;
+}
+
+#nav{
+   width: 100%;
+   height: 77px;
+   border-bottom: 1px solid #2f6eb6;
+}
+.logo{
+   background-color: #2f6eb6;
+   width: 280px;
+   height: 100px;
+   margin-left: 30px;
+   position: absolute;
+}
+.logo img{
+   width: 250px;
+   margin: 13px 14px;
+}
+
+.navigation{
+   float: left;
+}
+
+.navigation ul{
+   margin-left: 300px;
+   overflow: hidden;
+   width: 700px;
+}
+
+.navigation ul li{
+   list-style-type: none;
+   margin-left: 60px;
+   margin-top: 30px;
+   font-family: 'Montserrat', sans-serif;
+   float: left;
+}
+
+li{
+   cursor: pointer;
+}
+
+.map, .information{
+   width: 50%;
+   float: left;
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+.map{
+
+}
+.map img{
+   height:100vh;
+   min-width: 500px;
+   margin: 0px -30px;
+   display: block;
+}
+
+.box{
+   width: 43%;
+   height: 230px;
+   border: 1px solid #2f6eb6;
+   margin-left: 30px;
+   margin-top:15px;
+   float: left;
+   overflow: hidden;
+   position: relative;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+.up{text-transform: uppercase;}
+.bignumber{ font-size: 2em;}
+.greyinfo{color: silver;}
+
+.box img{
+   width: 100%;
+}
+
+.box .info{
+   position: absolute;
+   bottom: 0px;
+   background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(255,0,0,0));
+   width: 100%;
+   padding: 10px 5px;
+}
+
+.box1, .box2{
+   margin-top: 50px;
+}
+
+.dialog{
+   width: 500px;
+   height: 500px;
+   z-index: 11;
+   position: absolute;
+   top: 50px;
+   left: 50%;
+   margin-left:250px;
+}
