@@ -152,8 +152,9 @@ li{
     margin: 10% auto; /* 15% from the top and centered */
     padding: 50px;
     border: 1px solid #888;
-    width: 800px; /* Could be more or less, depending on screen size */
-    height: 500px;
+    width: 900px; /* Could be more or less, depending on screen size */
+    height: 540px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* The Close Button */
@@ -175,6 +176,7 @@ li{
 
 .imgwrap{
    width:50%;
+   float: left;
 }
 
 .bigone{
@@ -185,4 +187,23 @@ li{
    width: 47%;
    float: left;
    margin-top: 20px;
+}
+
+.infowrap{
+   padding-left: 16px;
+   width: 48%;
+   float: left;
+}
+.biginfo{
+   font-size: 2em;
+}
+.smallinfo{
+   font-size: 1.5em;
+   display: block;
+   margin-top: 10px;
+}
+.bignumber2{
+   font-size: 1.5em;
+   margin-top: 30px;
+   display: block;
 }
