@@ -133,3 +133,21 @@ a:active {
 .left{
    width: 1100px;
 }
+
+.contact-img{
+   margin-left: 50px;
+   margin-top: 100px;
+   float: left;
+   width: 400px;
+}
+.contact-img img{
+   width:100%;
+}
+
+.contact-content{
+   width: 300px;
+   height: 500px;
+   float: left;
+   margin-top: 10%;
+   margin-left: 10%;
+}
