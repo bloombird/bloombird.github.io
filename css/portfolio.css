@@ -66,7 +66,7 @@ section {
 }
 
 nav {
-   width: 10%;
+   width: 20%;
    position: fixed;
    z-index: 5555;
 }
@@ -112,7 +112,7 @@ a:active {
 
 
 .content{
-   width: 90%;
+   width: 80%;
    margin-left: 200px;
 }
 
@@ -150,4 +150,9 @@ a:active {
    float: left;
    margin-top: 10%;
    margin-left: 10%;
+}
+
+.coming{
+   opacity: 0.5;
+   font-size: 0.7em;
 }
