@@ -116,6 +116,14 @@ a:active {
     right: 0;
 }
 
+.content_individual{
+   width: 80%;
+   min-width: 600px;
+   margin-top: 100px;
+   position: absolute;
+   right:0;
+}
+
 .container {
   list-style:none;
   margin: 0;
@@ -187,9 +195,20 @@ a:active {
    background: url(../img/boston-cover.jpg) no-repeat center center;
 }
 
-.p-6-building{
+.p-pakistan{
    background: url(../img/pakistan-cover.png) no-repeat center center;
 }
+
+
+.p-6-building{
+   background: url(../img/6_building_cover.png) no-repeat center center;
+}
+   .content_detail_img01{
+
+   }
+   .content_detail_img03{
+      width: 80%;
+   }
 
 /* .content01{
    width: 400px;
