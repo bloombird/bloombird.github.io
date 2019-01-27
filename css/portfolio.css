@@ -126,6 +126,13 @@ a:active {
    margin-top:0px;
    background-color: white;
 }
+.pakistan_content{
+   margin-top: 0px;
+   background-color: #353738;
+}
+.pakistan_content .content_description {
+   color: white;
+}
 
 .content_detail_img01{
    width: 100%;
@@ -288,7 +295,7 @@ a:active {
 
 @media only screen and (max-width: 600px) {
    .content_description{
-      width: 100%;
+      width: 95%;
    }
    .nav{
       background-image: radial-gradient(white 5%, white 15%, #fcf5e300 60%);
