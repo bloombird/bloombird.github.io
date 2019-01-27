@@ -112,8 +112,7 @@ a:active {
     width: 80%;
     /*min-width: 600px;*/
     margin-top: 100px;
-    position: fixed;
-    right: 0;
+    float: right;
 }
 
 .content_individual{
@@ -145,21 +144,7 @@ a:active {
    padding: 100px 27%;
 }
 
-@media only screen and (max-width: 600px) {
-   .content_description{
-      width: 100%;
-   }
-   .nav{
-      background-image: radial-gradient(white 5%, white 15%, #fcf5e300 60%);
-   }
-   .nav ul{
-      padding-inline-start: 13px;
-      margin-block-start: 0.5em;
-   }
-   .content_description{
-      padding: 50px 10px;
-   }
-}
+
 
 .container {
   list-style:none;
@@ -268,24 +253,53 @@ a:active {
 
 /*contact*/
 .contact-img{
-   margin-left: 50px;
+   right: 20%;
    margin-top: 300px;
-   float: right;
+   position: fixed;
    width: 400px;
+   z-index: 0;
 }
 .contact-img img{
    width:100%;
 }
 
 .contact-content{
-   width: 300px;
+   width: 38%;
    height: 500px;
-   float: right;
-   margin-top: 10%;
    margin-left: 10%;
+   margin-top:0px;
+   position: fixed;
+   z-index: 2
 }
 
 .coming{
    opacity: 0.5;
    font-size: 0.7em;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   .content_description{
+      width: 100%;
+   }
+   .nav{
+      background-image: radial-gradient(white 5%, white 15%, #fcf5e300 60%);
+   }
+   .nav ul{
+      padding-inline-start: 13px;
+      margin-block-start: 0.5em;
+   }
+   .content_description{
+      padding: 50px 10px;
+   }
+   .contact-content{
+      width: 80%;
+      margin-left:0px;
+      margin-top: 100px;
+   }
+   .contact-img {
+      right: 0;
+   }
 }
