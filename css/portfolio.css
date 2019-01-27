@@ -123,12 +123,16 @@ a:active {
    position: absolute;
    right:0;
 }
+.type_content{
+   margin-top:0px;
+   background-color: white;
+}
 
 .content_detail_img01{
-   width: 90%;
+   width: 100%;
 }
 .content_detail_img02{
-   width: 90%;
+   width: 100%;
    margin-top: 30px;
    margin-bottom: 50px;
 }
@@ -138,7 +142,7 @@ a:active {
    width: 40%;
    margin: 0 auto;
    float: left;
-   padding: 100px 0px;
+   padding: 100px 27%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -146,11 +150,14 @@ a:active {
       width: 100%;
    }
    .nav{
-      background-color: #ffffff66;
+      background-image: radial-gradient(white 5%, white 15%, #fcf5e300 60%);
    }
    .nav ul{
       padding-inline-start: 13px;
       margin-block-start: 0.5em;
+   }
+   .content_description{
+      padding: 50px 10px;
    }
 }
 
