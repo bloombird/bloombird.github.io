@@ -110,7 +110,7 @@ a:active {
 
 .content{
     width: 80%;
-    min-width: 600px;
+    /*min-width: 600px;*/
     margin-top: 100px;
     position: fixed;
     right: 0;
@@ -118,7 +118,7 @@ a:active {
 
 .content_individual{
    width: 80%;
-   min-width: 600px;
+   /*min-width: 600px;*/
    margin-top: 100px;
    position: absolute;
    right:0;
@@ -139,6 +139,19 @@ a:active {
    margin: 0 auto;
    float: left;
    padding: 100px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+   .content_description{
+      width: 100%;
+   }
+   .nav{
+      background-color: #ffffff66;
+   }
+   .nav ul{
+      padding-inline-start: 13px;
+      margin-block-start: 0.5em;
+   }
 }
 
 .container {
