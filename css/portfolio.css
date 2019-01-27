@@ -170,7 +170,6 @@ a:active {
 }
 
 
-
 .item a{
    opacity: 0.5;
    width: 100%;
@@ -187,11 +186,13 @@ a:active {
 
 }
 
+
 .item a:hover{
    opacity:1;
    filter: blur(0px);
    cursor: pointer;
-      background-size: auto 230px;
+   background-size: auto 230px;
+
 }
 
 
@@ -212,13 +213,14 @@ a:active {
 }
 
 
+
 /* project-boson */
 .p-boston{
    background: url(../img/boston-cover.jpg) no-repeat center center;
 }
 
 .p-pakistan{
-   background: url(../img/pakistan-cover.png) no-repeat center center;
+   background: url(../img/pakistan_cover.png) no-repeat center center;
 }
 
 
@@ -231,6 +233,10 @@ a:active {
 
 .p-custard{
    background: url(../img/custard_cover.jpg) no-repeat center center;
+}
+
+.p-type{
+   background: url(../img/type_cover.jpg) no-repeat center center;
 }
 
 
