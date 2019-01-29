@@ -266,9 +266,8 @@ a:active {
 
 /*contact*/
 .contact-img{
-   right: 20%;
-   margin-top: 300px;
-   position: fixed;
+   margin-top: 0px;
+   position: relative;
    width: 400px;
    z-index: 0;
 }
@@ -277,12 +276,8 @@ a:active {
 }
 
 .contact-content{
-   width: 38%;
-   height: 500px;
-   margin-left: 10%;
-   margin-top:0px;
-   position: fixed;
-   z-index: 2
+   position: relative;
+   z-index: 2;
 }
 
 .coming{
@@ -298,7 +293,9 @@ a:active {
       width: 95%;
    }
    .nav{
-      background-image: radial-gradient(white 5%, white 15%, #fcf5e300 60%);
+      background-image: radial-gradient(#ffc930 10%, #ffd87f 30%, #fcf5e300 70%);
+      background-position: left -80px top -42px;
+      background-repeat: no-repeat;
    }
    .nav ul{
       padding-inline-start: 13px;
@@ -309,9 +306,9 @@ a:active {
    }
    .contact-content{
       width: 80%;
-      margin-left:0px;
-      margin-top: 200px;
-      margin-bottom: 300px;
+      margin-left:-30px;
+      margin-top: -50px;
+      margin-bottom: 100px;
    }
    .contact-img {
       right: 0;
