@@ -65,6 +65,11 @@ section {
    font-size: 30px;
 }
 
+#section-3 img, #section-4 img{
+   width: 700px;
+   box-shadow: 3px 3px 6px rgba(127, 98, 33, 0.3);
+}
+
 nav {
    width: 20%;
    min-width: 220px;
