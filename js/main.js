@@ -105,6 +105,11 @@
         fillLeafTL
             .to($stemMask, 2, {attr: {y:300}, ease:Power0.easeNone}, 'vase')
             .to($leafInsideMask01, 2, {attr: {y:600}, ease:Power0.easeNone}, '-=2')
+            .to($leafInsideMask02, 2, {attr: {y:580}, ease:Power0.easeNone}, '-=1')
+            .to($leafInsideMask03, 2, {attr: {y:420}, ease:Power0.easeNone}, '-=1')
+            .to($leafInsideMask04, 2, {attr: {y:400}, ease:Power0.easeNone}, '-=1')
+            .to($leafInsideMask05, 2, {attr: {y:350}, ease:Power0.easeNone}, '-=1')
+            .to($leafInsideMask06, 2, {attr: {y:300}, ease:Power0.easeNone}, '-=1')
             ;
 
         return fillLeafTL;
