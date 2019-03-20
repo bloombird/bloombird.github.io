@@ -1,0 +1,149 @@
+*{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto Mono', monospace;
+}
+
+.title{
+   width:20%;
+   float:left;
+   padding-left: 30px;
+   padding-top: 30px;
+   position: fixed;
+}
+
+.original {
+   position: relative;
+}
+
+.fa{
+   cursor: pointer;
+}
+
+.original img{
+   position: fixed;
+   width: 200px;
+   height: 250px;
+   left: 150px;
+   top: 50px;
+   opacity: 0;
+   z-index: 1;
+   transition: opacity 0.5s;
+}
+
+.fa:hover .original img{
+   opacity: 1;
+}
+
+.big{
+   font-size: 5em;
+   margin-bottom: -10px;
+}
+
+.small{
+   font-size: 1.5em;
+   margin-bottom: 20px;
+}
+
+.original{
+
+}
+
+.filter{
+   width: 77%;
+   float: right;
+}
+
+.series-selector-items {
+   float:left;
+   margin-top: 20px;
+}
+
+.series-selector-items > li {
+   cursor: pointer;
+   display: block;
+   float: left;
+   margin-right: 30px;
+   margin-top: 30px;
+}
+
+.square{
+   width: 40px;
+   height: 40px;
+   background-color: #fb2a0e;
+   opacity: 0.3;
+   box-shadow: none;
+   transition: box-shadow 0.5s, opacity 1s;
+}
+
+.square:hover{
+   box-shadow: 0px 8px 15px 0px #ffbf99;
+   background-color: #fb2a0e;
+   opacity: 1;
+}
+
+.semicircle{
+   background: #e3dcc6;
+   margin: 0 1em 1em 0;
+   height: 40px;
+   width: 20px;
+   border-bottom-right-radius: 40px;
+   border-top-right-radius: 40px;
+   opacity: 0.3;
+   transition: box-shadow 0.5s, opacity 1s;
+}
+
+.semicircle:hover{
+   box-shadow: 0px 8px 15px 0px #e3dcc6;
+   opacity: 1;
+}
+
+.triangle{
+   width: 0;
+   height: 0;
+   border-left: 23px solid transparent;
+   border-right: 23px solid transparent;
+   border-bottom: 40px solid #009e5a;
+   opacity: 0.3;
+   box-shadow: none;
+   transition: filter 0.5s, opacity 1s;
+
+}
+
+
+.triangle:hover{
+   filter: drop-shadow(0px 8px 15px #009e5a);
+   opacity: 1;
+}
+
+.circle{
+   width: 43px;
+   height: 43px;
+   border-radius: 50%;
+   background-color: #00b6ba;
+   opacity: 0.3;
+   box-shadow: none;
+   transition: filter 0.5s, opacity 1s;
+}
+
+.circle:hover{
+   filter: drop-shadow(0px 7px 8px #58e5e8);;
+   opacity: 1;
+}
+
+
+#items li{
+   display: block;
+   width: 30%;
+   max-width: 250px;
+   float: right;
+}
+
+ul li img{
+   width: 100%;
+}
+
+#items { padding-top: 10px; clear:left; }
+
+.selected { opacity: 1; }

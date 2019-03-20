@@ -251,6 +251,9 @@ a:active {
    background: url(../img/type_cover.jpg) no-repeat center center;
 }
 
+.p-fifty{
+   background: url(../img/fifty_cover.jpg) no-repeat center center;
+}
 
 /* .content01{
    width: 400px;
