@@ -262,6 +262,10 @@ a:active {
 .p-alina{
    background: url(../img/music_cover.jpg) no-repeat center center;
 }
+
+.p-5{
+   background: url(../img/p5_cover.jpg) no-repeat center center;
+}
 /* .content01{
    width: 400px;
    margin: 40px;
