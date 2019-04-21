@@ -115,11 +115,19 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-   z-index: 1000;
-   text-decoration: none;
-   color: #4CAF50;
+  z-index: 1000;
+  text-decoration: none;
+  color: #4CAF50;
 }
 
+#skip{
+  font-size: 30px;
+  z-index: 999;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  color: #c3c573;
+}
 
 
 /*# sourceMappingURL=style.css.map */
