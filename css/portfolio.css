@@ -140,8 +140,24 @@ a:active {
    color: white;
 }
 
+.parkngo_content {
+   background-color: white;
+   margin-top: 0px;
+}
+.flower_content {
+   background-color: #2a2a2c;
+}
 .content_detail_img01{
    width: 100%;
+}
+.pkgif, .pkgif2{
+   width: 40%;
+   align: center;
+   margin-left: 30%;
+}
+.pkgif2{
+   width: 60%;
+   margin-left: 20%;
 }
 .content_detail_img02{
    width: 100%;
@@ -267,6 +283,14 @@ a:active {
 .p-5{
    background: url(../img/p5_cover.jpg) no-repeat center center;
 }
+
+.p-parkngo{
+   background: url(../img/parkngo_cover.jpg) no-repeat center center;
+}
+
+.p-flower{
+   background: url(../img/flower_cover.jpg) no-repeat center center;
+}
 /* .content01{
    width: 400px;
    margin: 40px;
@@ -332,5 +356,9 @@ a:active {
    }
    .contact-img {
       right: 0;
+   }
+   .item a{
+      filter: none;
+      opacity: 1;
    }
 }
