@@ -1,0 +1,300 @@
+html,
+body{
+   margin: 0;
+   height: 100%;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 20px;
+   line-height: 1.5;
+   list-style: none;
+}
+
+div{
+   color: black;
+}
+
+ul,li{
+   margin-bottom: 80px;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.arrow{
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   right: 200px;
+   top: -30px;
+   border: solid black;
+   border-width: 0 1px 1px 0;
+   display: inline-block;
+   padding: 3px;
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   border-color: grey;
+   -webkit-animation: rightarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes rightarrow {
+   0% { right: 80px; opacity: 0.4 }
+   100% { right: 70px; opacity: 0.9 }
+}
+
+
+.trigger-0{width: 10px;height: 10px; background-color: #fff; position: absolute; left:1000px;z-index: 10; opacity: 0;}
+.trigger-1{width: 10px;height: 10px; background-color: #fff; position: absolute; left:-760px;z-index: 10; opacity:0;}
+.trigger-2{width: 10px;height: 10px; background-color: #fff; margin-left:300px;z-index: 10; opacity:0;}
+.trigger-3{width: 10px;height: 10px; background-color: #fff; margin-left:500px;z-index: 10; opacity:0;}
+.trigger-4{width: 10px;height: 10px; background-color: #fff; margin-left:900px;z-index: 10; opacity: 0;}
+.trigger-4-2{width: 10px;height: 10px; background-color: #fff; margin-left:1200px;z-index: 20; opacity: 0;}
+.trigger-5{width: 10px;height: 10px; background-color: #fff; margin-left:-350px;z-index: 10; opacity: 0;}
+.trigger-6{width: 10px;height: 10px; background-color: #fff; margin-left:100px;z-index: 10; opacity: 0;}
+.trigger-7{width: 10px;height: 10px; background-color: #fff; margin-left:-400px;z-index: 10; opacity: 0;}
+.trigger-8{width: 10px;height: 10px; background-color: #fff; margin-left:-200px;z-index: 10; opacity: 0;}
+.trigger-9{width: 10px;height: 10px; background-color: #fff; margin-left:1000px;z-index: 10; opacity: 0;}
+.trigger-10{width: 10px; height: 10px; background-color: #fff; margin-left: 833px; z-index: 10; position: absolute; top: 28vh; opacity: 0;}
+.trigger-11{width: 10px; height: 10px; background-color: #fff; margin-left: 200px; z-index: 10; position: absolute; top: 28vh; opacity: 0;}
+
+
+section {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  display: flex;
+  width: calc(1920px * 5 );
+  max-height:100vh;
+  overflow:hidden;
+  height: 100vh;
+  background-color: #efefef;
+}
+
+
+.cover{
+   width: 800px;
+   z-index: 5;
+   margin: auto;
+}
+.cone{width: 150px; position: absolute; z-index: 6; left: 1000px; top: 65vh;}
+.ball{width: 300px; position: absolute; z-index: 0; left: 350px; top: 40vh;}
+.hedgehog{width: 250px; position: absolute; z-index: 0; left: 900px; top: 10vh;}
+.stick{width: 850px; position: absolute; z-index: 6; left: 430px; top: 10vh;}
+
+.disc{
+   width: 900px;
+   height: 800px;
+   background: url("../img/title.gif") no-repeat;
+   background-size: cover;
+   z-index: 1;
+   position: absolute;
+   left: 300px;
+}
+
+/* #section-3{
+   border: 1px solid red;
+} */
+.content{
+   position: relative;
+   left: 480px;
+   top: 20vh;
+   z-index: 5;
+   color: black;
+   font-size: 2em;
+}
+
+
+.dust > span{ background-color: white; position: relative; top: 50px; z-index: 5;}
+.ash > span{ background-color: white; font-size: 2em; color: black; position: relative; z-index: 9; top: 40vh; left: 800px}
+.dust > img{ margin-top: -100px; margin-left: -450px;}
+.ash > img{ margin-top: 10vh; margin-left: 700px; z-index: 8;}
+
+
+
+.yellowband01{
+   width: 10px;
+   height: 10px;
+   background-color: yellow;
+   position: relative;
+   top: 85px;
+   left: -10px;
+   z-index: 10;
+   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   transform-origin: center left;
+   opacity: 0;
+}
+.longer{ transform: scale(43, 1); transform-origin: center left; opacity: 1; }
+
+
+.yellowband02{
+   width: 10px;
+   height: 10px;
+   background-color: yellow;
+   position: relative;
+   top: 45vh;
+   left: 790px;
+   z-index: 10;
+   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   transform-origin: center left;
+   opacity: 0;
+}
+.longer02{ transform: scale(10, 1); transform-origin: center left; opacity: 1; }
+.questionline{margin: auto;}
+.circlequestion{ position: relative; left: -400px; top: 25vh; width: 400px;}
+.rotate {
+   transform: rotate(90deg);
+}
+
+.line{
+   width: 1px;
+   height:1px;
+   background-color: black;
+   position: relative;
+   left: -200px;
+   top: 25vh;
+   margin-top: -200px;
+   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   transform-origin: center left;
+}
+.longer03{ transform: scale(300, 1); transform-origin: center left; opacity: 1; }
+
+.if{ position: relative; top: -78px; left: 256px;}
+.angel { position: relative; width: 135px; top: -55px; left: 390px;}
+.if2{ position: relative; top: -100px; left: 390px;}
+.evil{ position: relative; width: 135px; top: -50px; left: 250px;}
+.if3{ position: relative; top: 10vh; left: 500px;}
+.if3 > span { font-size: 1.5em;}
+
+.line2 {
+   width: 10px;
+   height: 1px;
+   background-color: black;
+   position: relative;
+   left: 800px;
+   top:10vh;
+   transition: transform 3s ease-out, opacity 0.1s ease-out;
+   transform-origin: center left;
+   opacity:0;
+}
+.longer04{ transform: scale(180, 1); transform-origin: center left; opacity: 1; }
+
+#section-1 img{
+   position: absolute;
+   top: 50px;
+   width: 700px;
+}
+
+.section1div, .section2div, .section3div{
+   position: absolute;
+   width: 85%;
+   height: 100%;
+}
+.reviews-2,.reviews-3, .reviews-4{
+   width: 500px;
+   position: relative;
+   top: 30vh;
+   left: 450px;
+}
+.reviews-3 {
+   top: 40vh;
+}
+
+.reviews-4 {
+   top: 35vh;
+   left: 0px;
+}
+
+
+
+.animategame{
+   position:relative;
+   color: white;
+   float: left;
+   margin-left: 10px;
+   font-size: 2em;
+}
+
+.story9{
+    color: white;
+    width: 300px;
+    position: relative;
+    top: 100px;
+    left: 800px;
+}
+
+#section-3{
+   background-image: linear-gradient(to right, #efefef , #4e4e4e);
+}
+
+#section-4, #section-5{
+   background-color: #4e4e4e;
+
+}
+
+
+
+.reviews-5{
+   position: relative;
+   width: 1200px;
+   top: -200px;
+   left: 650px;
+   color: white;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing: 46px;
+}
+
+.img2{
+   width: 10vh;
+   position: absolute;
+   top: 550px;
+   left: 1100px;
+   opacity: 0;
+   transition: transform 1s ease-out, opacity 0.3s ease-out;
+}
+.scaletaiji{ transform: scale(4);opacity:1; }
+
+
+.blackspan{
+   color: black;
+}
+.yellowspan{ background-color: black;}
+
+
+
+
+.section5div{
+   text-align: center;
+   font-size: 30px;
+   margin: auto;
+}
+
+.example {
+   margin-top: -15vh;
+
+}
+.example img {
+   width: 600px;
+}
+
+.example div {
+      color: white;
+}
+
+.arrow2 img{
+    position: relative;
+    left: -900px;
+    width: 300px;
+    top: 30vh;
+}
