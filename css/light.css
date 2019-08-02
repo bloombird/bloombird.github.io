@@ -1,0 +1,70 @@
+.whitebg{
+   background: white;
+   margin-top: 0px;
+}
+.lightdetail{
+   color: black;
+   margin-left: 10%;
+   margin-top: 50px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.my-player-dimensions {
+   width: 281px;
+   height: 500px;
+   float: left;
+   margin-left: 30px;
+   margin-bottom: 20px;
+}
+
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+    left: 35%;
+    top: 45%;
+}
+
+.rightvideo{
+   float: right;
+   width: 70%;
+}
+
+.lightsize{
+   width: 30%;
+   float: left;
+
+}
+.lastlight{
+   margin-bottom: 300px;
+}
+
+.lightdetail > p {
+   margin-top: 50px;
+   display: block;
+   width: 30%;
+   float: left;
+}
+
+@media only screen and (max-width: 600px) {
+   .lightsize{
+      width:100%;
+      margin-top: 10px;
+      margin-bottom: 30px;
+   }
+   .my-player-dimensions {
+      margin-top: 10px;
+      margin-left: 0px;
+      width: 100%;
+
+   }
+   .rightvideo{
+      width: 100%;
+   }
+   .lightdetail > p {
+      width: 100%;
+      margin-bottom: 40px;
+   }
+   .lastlight{
+      margin-bottom: 10px;
+   }
+}
