@@ -17,12 +17,7 @@
    margin-bottom: 20px;
 }
 
-.vjs-paused .vjs-big-play-button,
-.vjs-paused.vjs-has-started .vjs-big-play-button {
-    display: block;
-    left: 35%;
-    top: 45%;
-}
+
 
 .rightvideo{
    float: right;
