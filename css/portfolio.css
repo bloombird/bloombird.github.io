@@ -164,9 +164,21 @@ a:active {
    width: 100%;
    margin-top: 30px;
    margin-bottom: 50px;
+
 }
 
-
+.content_detail_img03{
+   width: 100%;
+   float: left;
+}
+.photoleft{
+   width: 50%;
+   float:left;
+}
+.photoright{
+   width:50%;
+   float:left;
+}
 .content_description{
    width: 40%;
    margin: 0 auto;
