@@ -5,7 +5,8 @@ body{
    height: 100%;
    font-size: 20px;
    line-height: 1.5;
-   font: 16px/1.5 'Gaegu', Helvetica, Helvetica Neue, Arial, sans-serif;
+   /*font: 16px/1.5 'Gaegu', Helvetica, Helvetica Neue, Arial, sans-serif;*/
+   font-family: 'Baskervville', serif;
    background: #fcf5e3;
 }
 div{
@@ -307,6 +308,9 @@ a:active {
 
 .p-light{
    background: url(../img/light_cover.jpg) no-repeat center center;
+}
+.p-ecouture{
+   background: url(../img/e_couture.png) no-repeat center center;
 }
 .content01{
    width: 410px;
