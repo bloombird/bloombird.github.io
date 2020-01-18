@@ -58,6 +58,7 @@ section {
 }
 
 
+
 #section-1 img{
    width: 600px;
    box-shadow: 3px 3px 6px rgba(127, 98, 33, 0.3);
@@ -72,12 +73,19 @@ section {
    box-shadow: 3px 3px 6px rgba(127, 98, 33, 0.3);
 }
 
+.intro_name {
+   font-size: 4em; width: 2000px;
+   position: fixed;
+   left:10px;
+   top:0;
+}
+
 nav {
    width: 20%;
    min-width: 220px;
    position: fixed;
    z-index: 5555;
-   top:0px;
+   top:60%;
 }
 
 nav ul li{
@@ -398,10 +406,12 @@ a:active {
    .content_description{
       width: 95%;
    }
+   .intro_name {display: none;}
    .nav{
       background-image: radial-gradient(#ffc930 10%, #ffd87f 30%, #fcf5e300 70%);
       background-position: left -80px top -42px;
       background-repeat: no-repeat;
+      top:0;
    }
    .nav ul{
       padding-inline-start: 13px;
