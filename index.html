@@ -10,9 +10,26 @@
 
 </head>
 <body>
+   <div class="loader">
+      <div class="loader loader--style3" title="2">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+        <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+          <animateTransform attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 25 25"
+            to="360 25 25"
+            dur="0.6s"
+            repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+   </div>
    <div>
      <main class="full-screen" id="intro" role="main">
         <div class="intro_name">Hi,</br> I'm Sophie.</br>A girl who loves her flute.</div>
+        <a onclick="scrollWin()" class="arrow_index"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.17 25.83"><defs><style>.cls-1{fill:#227f74;}</style></defs><title>more</title><path class="cls-1" d="M28.13,13.11a.52.52,0,0,0-.11-.55L15.6.15a.48.48,0,0,0-.7,0,.48.48,0,0,0,0,.7L26.46,12.42H.5a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5h26L14.9,25a.5.5,0,0,0,0,.71.52.52,0,0,0,.35.14.5.5,0,0,0,.35-.14L28,13.27A.57.57,0,0,0,28.13,13.11Z"/></svg></a>
         <nav class="nav">
            <ul>
               <li><a href="portfolio.html"  class="active">Home</a></li>
@@ -24,14 +41,13 @@
         </nav>
         <section class="full-screen" id="start">
            <a class="start-content" href="illustration.html">
-             <img src="img/p2.gif" alt="">
-
+             <img src="img/p2.gif" alt="" class="content__img">
           </a>
         </section>
 
         <section class="full-screen" id="section-1">
           <a href="hometown.html"><div class="section1div">
-            <img src="img/p1.jpg" alt="#"><br>
+            <img src="img/p1.jpg" alt="#" class="content__img"><br>
             <span class="p1-text">'My home town'</span>
           </div></a>
         </section>
@@ -39,7 +55,7 @@
         <section class="full-screen" id="section-2">
           <div class="section2div">
              <a href="custard.html">
-             <img src="img/file.gif" alt="custard.html"><br>
+             <img src="img/file.gif" class="content__img" alt="custard.html"><br>
              <span class="p1-text">New type of file explorer by using 'tag'</span>
              </a>
           </div>
@@ -48,7 +64,7 @@
         <section class="full-screen" id="section-3">
           <div class="section3div">
              <a href="type.html">
-             <img src="img/25type.jpg" alt="type.html"><br>
+             <img src="img/25type.jpg" class="content__img" alt="type.html"><br>
              <span class="p1-text">25 days experiment typography challenge</span>
              </a>
           </div>
@@ -56,7 +72,7 @@
         <section class="full-screen" id="section-4">
            <div class="section4div">
              <a href="e-couture.html">
-             <img src="img/ecouture.jpg" href="e-couture.html"><br>
+             <img src="img/ecouture.jpg" class="content__img" href="e-couture.html"><br>
              <span class="p1-text">E-COUTURE</span>
              </a>
             </div>
@@ -70,9 +86,21 @@
    </div>
 
 
-               <script>
+               <script type="text/javascript">
 						// init controller
+                  window.addEventListener("load", function () {
+                     const loader = document.querySelector(".loader");
+                     loader.className += " hidden";
+                  });
+
 						var controller = new ScrollMagic.Controller({vertical: false});
+
+                  function scrollWin() {
+                    window.scrollBy({ top:0, left:300, behavior:'smooth'});
+                  }
+
+
+
 					</script>
 
                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -40,10 +40,41 @@ section {
   width: calc(1500px * 5 );
   max-height:100vh;
   overflow:hidden;
-  height: 100vh;
-  background-color: #fcf5e3;
+  height: 98vh;
+  z-index: 6;
+  /* background-color: #fcf5e3; */
 }
 
+.loader{
+   width: 100%;
+   height: 100%;
+   background: white;
+   position: fixed;
+   z-index: 100000;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+svg path,
+svg rect{
+  fill: #227f74;
+}
+
+.loader.hidden{
+   animation: fadeOut 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+   100% {
+      opacity: 0;
+      visibility: hidden;
+   }
+}
 
 
 .start-content{
@@ -56,7 +87,15 @@ section {
    box-shadow: 3px 3px 6px rgba(127, 98, 33, 0.3);
    width: 550px;
 }
-
+.arrow_index{
+   width: 50px;
+   height: 50px;
+   bottom:7%;
+   right: 7%;
+   position: fixed;
+   z-index: 10;
+   cursor: pointer;
+}
 
 
 #section-1 img{
