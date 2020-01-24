@@ -228,6 +228,10 @@ a:active {
    color: white;
 }
 
+.siggraph_content{
+   width:100%; margin: 0 auto 200px;text-align: center;
+}
+
 .content_detail_img03{
    width: 100%;
    float: left;
@@ -456,6 +460,10 @@ a:active {
    width: 20%;
 }
 
+.siggraph_image0{
+   margin: 100px 0 200px;
+}
+
 
 @media only screen and (max-width: 600px) {
    .content_description{
@@ -519,5 +527,14 @@ a:active {
    .content01{
       width: 80%;
       margin-bottom: 40px;
+   }
+   .sig_content{
+      padding: 100px 0;
+   }
+   .siggraph_content{
+      margin: 0 auto 50px;
+   }
+   .siggraph_image0{
+      margin: 250px 0 50px;
    }
 }
