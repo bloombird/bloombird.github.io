@@ -372,6 +372,9 @@ a:active {
 .p-ecouture{
    background: url(../img/e_couture.png) no-repeat center center;
 }
+.p-siggraph{
+   background: url(../img/siggraph_cover.png) no-repeat center center;
+}
 .content01{
    width: 410px;
    margin: 40px;
