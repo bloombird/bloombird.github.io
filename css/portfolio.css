@@ -532,9 +532,10 @@ a:active {
       padding: 100px 0;
    }
    .siggraph_content{
-      margin: 0 auto 50px;
+      margin: 0 auto;
+      font-size: 1em;
    }
    .siggraph_image0{
-      margin: 250px 0 50px;
+      margin: 50px 0 50px;
    }
 }
