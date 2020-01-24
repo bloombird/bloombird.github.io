@@ -1,3 +1,7 @@
+@font-face {
+    font-family: CalibreTest-Thin;
+    src: url('CalibreTest-Thin.woff');
+}
 
 html,
 body{
@@ -37,7 +41,7 @@ section {
 
 .full-screen {
   display: flex;
-  width: calc(1500px * 5 );
+  width: calc(1500px * 6 );
   max-height:100vh;
   overflow:hidden;
   height: 98vh;
@@ -213,6 +217,15 @@ a:active {
    margin-top: 30px;
    margin-bottom: 50px;
 
+}
+
+.sig_content{
+   width: 100%;
+   font-size: 2em;
+   font-family: 'CalibreTest-Thin';
+   text-align: center;
+   padding: 300px 0;
+   color: white;
 }
 
 .content_detail_img03{
