@@ -464,7 +464,14 @@ a:active {
    margin: 100px 0 200px;
 }
 
+.sig_video_logo{
+   height: 360px;
+}
 
+.sig_video_web{
+   height: 630px;
+   margin-bottom: 300px;
+}
 @media only screen and (max-width: 600px) {
    .content_description{
       width: 95%;
@@ -529,7 +536,15 @@ a:active {
       margin-bottom: 40px;
    }
    .sig_content{
-      padding: 100px 0;
+      padding: 10px 0;
+      font-size: 1.5em;
+   }
+   .sig_video_logo{
+      height:200px;
+   }
+   .sig_video_web{
+      height: 200px;
+      margin-bottom: 0px;
    }
    .siggraph_content{
       margin: 0 auto;
