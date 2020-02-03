@@ -1,10 +1,10 @@
 .p5{
-   background-color: white;
+   background-color: #424242;
    margin-top: 0px;
 }
 
 .p5detail{
-   color: black;
+   color: white;
    margin-left: 10%;
    margin-top: 50px;
    font-family: 'Open Sans', sans-serif;
@@ -38,7 +38,7 @@
    margin-top: 100px;
    float: left;
    margin-bottom: 100px;
-   box-shadow: 0px 3px 17px #d4d4d4;
+   box-shadow: 0px 3px 17px #000;
 }
 
 .p5last{
